@@ -1,0 +1,5 @@
+重新下載專案要做事情
+第一步:npm install
+
+要執行專案
+第一步:npm run dev

@@ -3,6 +3,15 @@ node_modules => 裝相關套件
 public => 放公開可以儲存的資料
 src => 開發內容的區域
 
+【src】
+assets (資源放圖片或者自己撰寫的CSS內容)
+components (元件或組件 網頁上共用的內容)
+router (路由 網頁上的路徑總覽)
+stores (共用的js功能)
+views (所有畫面都放在這裡)
+App.vue (網頁最外層不動的內容)
+main.js (啟動vue和相關套件引入)
+
 【檔案】
 .gitattributes (不會使用到【github在處理文件會使用到】)
 .gitignore (過濾上傳的內容)
@@ -16,3 +25,6 @@ jsconfig.json (啟動專案的相關資訊)
 .editorconfig (排版用的)
 
 README.md (github上顯示的內容)
+
+
+
