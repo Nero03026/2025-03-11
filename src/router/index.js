@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import StepView01 from '../views/Step01.vue'
+import StepView02 from '../views/Step02.vue'
+import StepView03 from '../views/Step03.vue'
+import StepView04 from '../views/Step04.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,20 +14,24 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      path: '/step01',
+      name: 'step01',
+      component: StepView01,
     },
     {
-      path: '/conent',
-      name: 'conent',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ContentView.vue'),
+      path: '/step02',
+      name: 'step02',
+      component: StepView02,
+    },
+    {
+      path: '/step03',
+      name: 'step03',
+      component: StepView03,
+    },
+    {
+      path: '/step04',
+      name: 'step04',
+      component: StepView04,
     },
   ],
 })

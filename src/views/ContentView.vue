@@ -1,4 +1,11 @@
 <script>
+// 引入圖片到這個VUE檔案來使用
+// import 名稱 from 從哪裡引入
+import bento from '@/assets/便當菜單.jpg';
+// import bento1 from '../assets/便當菜單.jpg';
+// import bento from '/img/便當菜單.jpg';
+// js 大多數是使用單引號來撰寫
+
 export default {
     data() {
         return {
@@ -20,7 +27,10 @@ export default {
                 "茄汁排骨便當": 85,
                 "招牌雞腿便當": 65,
             },
-            isSubmitted: false
+            isSubmitted: false,
+            // 要使用圖片的話，就要在資料裡面撰寫對應的連結
+            // Vue的內容使用的變數名稱:引入的變數名稱,
+            bento: bento,
         };
     },
     computed: {
@@ -81,8 +91,12 @@ export default {
 
 <template>
     <figure class="img-block">
-        <img src="./便當菜單.jpg" alt="便當菜單">
+        <img :src="bento" alt="便當菜單">
     </figure>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
+    {{ bento }}
     <div class="container">
         <fieldset class="card">
             <legend>老師</legend>
