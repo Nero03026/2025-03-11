@@ -4,6 +4,7 @@ import StepView01 from '../views/Step01.vue'
 import StepView02 from '../views/Step02.vue'
 import StepView03 from '../views/Step03.vue'
 import StepView04 from '../views/Step04.vue'
+import Count from '../views/CountView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/step04',
       name: 'step04',
       component: StepView04,
+    },
+    {
+      path: '/count',
+      name: 'count',
+      component: Count,
     },
   ],
 })

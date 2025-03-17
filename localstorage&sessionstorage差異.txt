@@ -1,0 +1,14 @@
+1.cookies
+能儲存的資料太小
+
+
+2.localstorage
+會一直存著
+3.sessionstorage
+瀏覽器關掉的時候就會釋放
+
+
+
+狀態機
+登入、登出、菜單、地區
+pinia
